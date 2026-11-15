@@ -4,536 +4,385 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="description" content="Gourav Dhankhar — Offensive Security Professional. Red team, blue team & SOC operations. VAPT, EDR research, Agentic SOC/NOC, Garuda 1.">
+    <title>Gourav Dhankhar — Offensive Security | Bastion</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230A0F14'/%3E%3Ctext x='14' y='44' font-family='monospace' font-size='34' font-weight='bold' fill='%238FC1D4'%3E%3E_%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="main-content">
-    <header class="container header active" id="home">
-        <div class="header-content">
-            <div class="left-header">
-                <div class="h-shape"></div>
-                <div class="image">
-                    <img src="img/hero.png" alt="">
+<body>
+    <!-- ======================= TOP NAV ======================= -->
+    <nav class="topnav" id="topnav">
+        <a class="brand" href="#home"><span class="brand-prompt">gourav@bastion</span><span class="brand-sep">:</span><span class="brand-path">~$</span><span class="brand-cursor"></span></a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#arsenal">Arsenal</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#speaking">Speaking</a></li>
+            <li><a href="#certs">Certs</a></li>
+            <li><a href="#proof">Proof</a></li>
+            <li><a href="#contact" class="nav-cta">Contact</a></li>
+            <li><button class="theme-btn" id="themeBtn" aria-label="Toggle light/dark theme"><i class="fas fa-adjust"></i></button></li>
+        </ul>
+    </nav>
+
+    <!-- ======================= HERO ======================= -->
+    <header class="hero" id="home">
+        <div class="hero-inner">
+            <div class="hero-left">
+                <p class="hero-kicker"><span class="status-dot"></span> SOC OPERATOR // RED + BLUE TEAM</p>
+                <h1 class="hero-name">GOURAV<br>DHANKHAR</h1>
+                <p class="hero-title">Offensive Security Professional <span class="hero-title-sep">|</span> Red Team, Blue Team &amp; SOC Operations</p>
+                <p class="hero-sub">I break into systems for a living — then I build the defences that stop the next person from doing it. VAPT and EDR research on the red side, a running SOC and an agentic-AI roadmap on the blue.</p>
+                <div class="hero-btns">
+                    <a href="assets/Gourav_Dhankhar_Resume.pdf" class="btn btn-primary" download><i class="fas fa-download"></i> Download CV</a>
+                    <a href="#contact" class="btn btn-ghost"><i class="fas fa-terminal"></i> Get in touch</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/gourav-dhankhar-280629188" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/gourav24401" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/gourav_dhankhar_2003" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/GOURAV_DH" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCgWkUHm2D9yOn7dqYJ-pc6A/featured" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
-            <div class="right-header">
-                <h1 class="name">
-                    Hi, I'm <span>Gourav Dhankhar</span>
-                    Student & a cyber security enthusiast.
-                </h1>
-                <p>
-                    I am passionate about penetration testing ,block chain technology and tech development in the field of cyber security. </p>
-                <div class="btn-con">
-                    <a href="https://drive.google.com/file/d/1pBoV_Ojz7bwf9yWfDCZOJK8drwY5RLzh/view?usp=drive_link" class="main-btn">
-                        <span class="btn-text">Download CV</span>
-                        <span class="btn-icon"><i class="fas fa-download"></i></span>
-                    </a>
+            <div class="hero-right">
+                <div class="terminal" aria-hidden="true">
+                    <div class="term-bar"><span class="term-dot red"></span><span class="term-dot amber"></span><span class="term-dot green"></span><span class="term-title">gourav@bastion — zsh</span></div>
+                    <div class="term-body" id="termBody">
+                        <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">whoami</span></div>
+                        <div class="term-out">gourav_dhankhar — offensive security professional</div>
+                        <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">cat focus.txt</span></div>
+                        <div class="term-out">red team <span class="term-dim">·</span> blue team <span class="term-dim">·</span> soc operations</div>
+                        <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">./garuda1 --status</span></div>
+                        <div class="term-out"><span class="term-ok">● running</span> — agentic-ai layer on roadmap</div>
+                        <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd" id="typedCmd"></span><span class="term-caret"></span></div>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="stat-strip">
+            <div class="stat"><span class="stat-num">5</span><span class="stat-label">Certifications</span></div>
+            <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Security Tools</span></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">Speaking Events</span></div>
+            <div class="stat"><span class="stat-num">2</span><span class="stat-label">Domains — Red &amp; Blue</span></div>
+        </div>
     </header>
+
     <main>
-        <section class="container about" id="about">
-            <div class="main-title">
-                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+        <!-- ======================= ABOUT ======================= -->
+        <section class="section" id="about">
+            <div class="section-head reveal">
+                <p class="section-tag">// 01 — whoami</p>
+                <h2 class="section-title">About <span>me</span></h2>
             </div>
-            <div class="about-container">
-                <div class="left-about">
-                    <h4>Information About me</h4>
-                    <p>
-                        In Rohtak, I'm a student living a vibrant life with my family and friends from diverse backgrounds. Currently studying at Dronacharya College of Engineering, I unwind by playing with my dog Jhoney, binge-watching anime, and diving into superhero comic books. My passion for ethical hacking drives my ambitions, fueled by relentless support from my parents, who emphasize the importance of pursuing what truly brings me joy and fulfillment.
-                       
-                      </p>
-                   
+            <div class="about-grid">
+                <div class="about-photo reveal">
+                    <!-- BIO PHOTO: swap img/hero.png for a newer portrait any time — same filename, same spot. -->
+                    <img src="img/hero.png" alt="Gourav Dhankhar">
+                    <div class="photo-caption"><span class="status-dot"></span> Rohtak, Haryana, India — IST (UTC+5:30)</div>
                 </div>
-                
-            </div>
-            <div class="about-stats">
-                <h4 class="stat-title">My Skills</h4>
-                <div class="progress-bars">
-                    <div class="progress-bar">
-                        <p class="prog-title">HTML5 & CSS</p>
-                        <div class="progress-con">
-                            <p class="prog-text">50%</p>
-                            <div class="progress">
-                                <span class="html"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Ruby</p>
-                        <div class="progress-con">
-                            <p class="prog-text">50%</p>
-                            <div class="progress">
-                                <span class="css"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Java</p>
-                        <div class="progress-con">
-                            <p class="prog-text">65%</p>
-                            <div class="progress">
-                                <span class="js"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Perl</p>
-                        <div class="progress-con">
-                            <p class="prog-text">50%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">C++/C-language</p>
-                        <div class="progress-con">
-                            <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="node"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Python</p>
-                        <div class="progress-con">
-                            <p class="prog-text">90%</p>
-                            <div class="progress">
-                                <span class="python"></span>
-                            </div>
-                        </div>
+                <div class="about-body reveal">
+                    <p class="lead">Cybersecurity professional working both sides of the fence — red team and blue team alike.</p>
+                    <p>I deliver client VAPT engagements, research AI in cybersecurity and run breach and attack simulation. I run the SOC at Cache Digitech — Elastic SIEM, DLP and SEG deployed from scratch — and built Garuda&nbsp;1, an automated ticketing and monitoring platform with an agentic-AI layer on its roadmap.</p>
+                    <p>Off the clock, I'm in Rohtak with family, playing with my dog Jhoney, binge-watching anime, and reading superhero comics. My parents' one rule growing up: pursue what actually brings you joy. This is what that looks like.</p>
+                    <div class="about-facts">
+                        <div class="fact"><span class="fact-k">EDUCATION</span><span class="fact-v">B.Tech, Cybersecurity &amp; IoT — Dronacharya College of Engineering, MDU University (2021–2025)</span></div>
+                        <div class="fact"><span class="fact-k">SCHOOLING</span><span class="fact-v">Class 12, Vaish Public School, Rohtak — 9 GPA (2021)</span></div>
+                        <div class="fact"><span class="fact-k">LANGUAGES</span><span class="fact-v">Hindi · English</span></div>
+                        <div class="fact"><span class="fact-k">CURRENTLY</span><span class="fact-v">Offensive Security Professional @ Cache Digitech Pvt. Ltd.</span></div>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- ======================= ARSENAL ======================= -->
+        <section class="section" id="arsenal">
+            <div class="section-head reveal">
+                <p class="section-tag">// 02 — loadout</p>
+                <h2 class="section-title">Skills <span>arsenal</span></h2>
+                <p class="section-sub">No percentage bars — either it's in the toolkit or it isn't. Grouped by the side of the fence it serves.</p>
             </div>
-            <h4 class="stat-title">My Timeline</h4>
+            <div class="arsenal-grid">
+                <div class="arsenal-card reveal">
+                    <h3><i class="fas fa-crosshairs"></i> Red Team &amp; Offensive Security</h3>
+                    <div class="chips">
+                        <span>API penetration testing</span><span>VAPT — network</span><span>VAPT — web</span><span>VAPT — thick-client</span><span>Breach and Attack Simulation (BAS)</span><span>EDR evasion</span><span>Mythic C2</span><span>Burp Suite</span><span>Postman</span><span>Metasploit</span><span>Nmap</span><span>SQLmap</span><span>OWASP ZAP</span>
+                    </div>
+                </div>
+                <div class="arsenal-card reveal">
+                    <h3><i class="fas fa-shield-halved"></i> Blue Team &amp; SOC Operations</h3>
+                    <div class="chips">
+                        <span>SOC leadership</span><span>Incident response &amp; triage</span><span>Elastic SIEM administration</span><span>Detection engineering</span><span>Security gap assessments</span>
+                    </div>
+                </div>
+                <div class="arsenal-card reveal">
+                    <h3><i class="fas fa-fingerprint"></i> Endpoint &amp; Data Security</h3>
+                    <div class="chips">
+                        <span>SentinelOne EDR</span><span>CrowdStrike EDR</span><span>Trellix Database Security</span><span>SEG</span><span>DLP</span><span>Fortinet firewalls</span>
+                    </div>
+                </div>
+                <div class="arsenal-card reveal">
+                    <h3><i class="fas fa-cloud"></i> Cloud &amp; Agentic AI Security</h3>
+                    <div class="chips">
+                        <span>Wiz CNAPP — SME</span><span>Prompt Security AI guardrails</span><span>Agentic SOC</span><span>Agentic NOC</span><span>Agentic IAG</span><span>Anomaly detection agents</span><span>Third-party risk assessment agents</span>
+                    </div>
+                </div>
+                <div class="arsenal-card reveal wide">
+                    <h3><i class="fas fa-toolbox"></i> Tools &amp; Platforms</h3>
+                    <div class="chips">
+                        <span>Wazuh</span><span>Splunk</span><span>GitHub</span><span>GitLab</span><span>Python</span><span>Linux administration</span><span>Wireshark</span><span>OSINT</span><span>Digital forensics</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= EXPERIENCE ======================= -->
+        <section class="section" id="experience">
+            <div class="section-head reveal">
+                <p class="section-tag">// 03 — service record</p>
+                <h2 class="section-title">Experience</h2>
+            </div>
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
+                <article class="job reveal">
+                    <div class="job-head">
+                        <div>
+                            <h3>Cache Digitech Pvt. Ltd.</h3>
+                            <p class="job-role">Offensive Security Professional · Red Team &amp; Blue Team Operations</p>
+                        </div>
+                        <span class="job-date">2025 — Present</span>
                     </div>
-                    <p class="tl-duration">2021</p>
-                    <h5>Graduated Clas 12Th<span> - with 9 G.P.A</span></h5>
-                    <p>
-                        I received a 9 G.P.A. after completing my 12th grade year at Vaish Public School in Rohtak.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
+                    <div class="job-grid">
+                        <div class="job-item"><span class="job-num">01</span><h4>VAPT</h4><p>Red-team engagements across network, web, API and thick-client applications for clients.</p></div>
+                        <div class="job-item"><span class="job-num">02</span><h4>SOC Leadership</h4><p>Runs security operations — detection, incident response, day-to-day SOC.</p></div>
+                        <div class="job-item"><span class="job-num">03</span><h4>EDR Evasion</h4><p>Researched bypasses of SentinelOne and CrowdStrike, demonstrated via Mythic C2.</p></div>
+                        <div class="job-item"><span class="job-num">04</span><h4>SIEM &amp; Data Security</h4><p>Deployed Elastic SIEM, DLP and SEG from the ground up; platform admin.</p></div>
+                        <div class="job-item"><span class="job-num">05</span><h4>CERT-In</h4><p>Key performer in testbed evaluations and technical interviews; SAST/DAST security beds.</p></div>
+                        <div class="job-item"><span class="job-num">06</span><h4>Garuda 1</h4><p>Designed and built the in-house automated SOC ticketing and monitoring platform.</p></div>
+                        <div class="job-item"><span class="job-num">07</span><h4>AI Research</h4><p>Dedicated work on Agentic SOC, NOC and IAG; VA and exposure management; third-party risk assessment.</p></div>
+                        <div class="job-item"><span class="job-num">08</span><h4>Agentic AI</h4><p>Agentic SOC/NOC PoCs — telecom, BFSI, stock exchanges; agentic app-building expert.</p></div>
+                        <div class="job-item"><span class="job-num">09</span><h4>AI Guardrails</h4><p>Prompt Security (SentinelOne) — prompt-injection and jailbreak protection.</p></div>
+                        <div class="job-item"><span class="job-num">10</span><h4>Cloud &amp; Advisory</h4><p>Wiz SME; client security gap assessments.</p></div>
+                        <div class="job-item"><span class="job-num">11</span><h4>Pre-Sales</h4><p>Supports and often leads pre-sales calls for blue- and red-team security solutions.</p></div>
+                        <div class="job-item"><span class="job-num">12</span><h4>Industry Events</h4><p>Key speaker for Cache Digitech: CISO Horizon 2026, ET CISO, Dell Tech Forum.</p></div>
                     </div>
-                    <p class="tl-duration">2021-</p>
-                    <h5>Engineering<span> - DCE.</span></h5>
-                    <p>
-                      From october 2021 onwards I am persuing B.tech in Cyber Security and IOT . 
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
+                </article>
+                <article class="job reveal">
+                    <div class="job-head">
+                        <div>
+                            <h3>Secure Strike</h3>
+                            <p class="job-role">SOC Analyst Intern</p>
+                        </div>
+                        <span class="job-date">06/2024 — 07/2024</span>
                     </div>
-                    <p class="tl-duration">march,2021</p>
-                    <h5>Project selected for SIH 2021<span> - Printable solar panels</span></h5>
-                    <p>
-                       On march 2022 my project based on printable photovoltaic cells selected for SIH 2022.
-                       The project encountered disqualification at a later stage, primarily due to implementation challenges  
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">May,2022</p>
-                    <h5>1st prize winner<span> - For best technical Poster presentation</span></h5>
-                    <p>
-                    On May 2022 I won the first prize winner in  technical Poster presentation
-                    with my partner Gulshan.
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">August,2022</p>
-                    <h5>1st Rank <span>In college, following the release of the second semester examination results through out all of the branches. </span></h5>
-                    <p>
-                        Following the results of the second semester, I was ranked first in my college among all students in my cohort, with a CGPA of 9.57 .
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">October,2022</p>
-                    <h5>1st Place <span>in an intra-college website design competition focusing on space tourism. </span></h5>
-                    <p>
-                        I clinched first place in an intra-college website design contest themed around space tourism. My winning creation, "Aakash Ganga," stood out among competitors for its innovative approach and design.<a href="https://gourav24401.github.io/AakashGanga2-0.github.io/">(Link for website.)</a>
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">August,2023</p>
-                    <h5>1st Rank <span>In MDU university, following the release of the fourth semester examination results through out the students of  CSE(Cyber Security) branch. </span></h5>
-                    <p>
-                        Following the results of the Fourth semester, I was ranked first in MDU University among all students in CSE(Cyber Security) .
-                    </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">December,2023</p>
-                    <h5>FAER Program<span> Project selected for FAER scholar program 2023. </span></h5>
-                    <p>
-                        In December 2023, Sentai-G earned a spot in the FAER scholarship program. It's a sentiment analysis tool designed for Hindi and Hinglish, and our team is diligently preparing it for the finals.   </p>
-                </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <p class="tl-duration">Feburary,2024</p>
-                    <h5>1st Rank <span>In MDU university, following the release of the fifth semester examination results through out the students of  CSE(Cyber Security) branch. </span></h5>
-                    <p>
-                        Following the results of the Fifth semester, I was ranked first in MDU University among all students in CSE(Cyber Security) .
-                    </p>
-                </div>
-                </div>
+                    <p class="job-desc">SOC monitoring, incident triage, log analysis and detection rules in simulated enterprise environments.</p>
+                </article>
             </div>
         </section>
-        <section class="container" id="portfolio">
-            <div class="main-title">
-                <h2>My <span>Portfolio</span><span class="bg-text">My Gallery</span></h2>
+
+        <!-- ======================= PROJECTS ======================= -->
+        <section class="section" id="projects">
+            <div class="section-head reveal">
+                <p class="section-tag">// 04 — built in the den</p>
+                <h2 class="section-title">Featured <span>projects</span></h2>
             </div>
-            <p class="port-text">
-                Here are glimpse of few of my achivements.
-            </p>
-            <div class="portfolios">
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port1.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://www.google.com/url?q=http%3A%2F%2Finstagram.com%2Fgourav_dhankhar_2003&sa=D" class="icon">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCgWkUHm2D9yOn7dqYJ-pc6A/featured" target="_blank" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port2.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://www.google.com/url?q=http%3A%2F%2Finstagram.com%2Fgourav_dhankhar_2003&sa=D" class="icon">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCgWkUHm2D9yOn7dqYJ-pc6A/featured" target="_blank" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port3.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                           
-                            <a href="https://www.google.com/url?q=http%3A%2F%2Finstagram.com%2Fgourav_dhankhar_2003&sa=D" class="icon">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCgWkUHm2D9yOn7dqYJ-pc6A/featured" target="_blank" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port4.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://www.google.com/url?q=http%3A%2F%2Finstagram.com%2Fgourav_dhankhar_2003&sa=D" class="icon">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCgWkUHm2D9yOn7dqYJ-pc6A/featured" target="_blank" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port5.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://www.google.com/url?q=http%3A%2F%2Finstagram.com%2Fgourav_dhankhar_2003&sa=D" class="icon">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCgWkUHm2D9yOn7dqYJ-pc6A/featured" target="_blank" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port6.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            <a href="https://www.google.com/url?q=http%3A%2F%2Finstagram.com%2Fgourav_dhankhar_2003&sa=D" class="icon">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCgWkUHm2D9yOn7dqYJ-pc6A/featured" target="_blank" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/port7.jpg" alt="">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Project Source</h3>
-                        <div class="icons">
-                            </a>
-                            <a href="https://www.google.com/url?q=http%3A%2F%2Finstagram.com%2Fgourav_dhankhar_2003&sa=D" class="icon">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCgWkUHm2D9yOn7dqYJ-pc6A/featured" target="_blank" class="icon">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="project-grid">
+                <article class="project-card reveal featured">
+                    <div class="project-top"><span class="project-tag">FLAGSHIP</span><i class="fas fa-tower-broadcast project-icon"></i></div>
+                    <h3>Garuda 1</h3>
+                    <p class="project-sub">Automated SOC Ticketing &amp; Monitoring Platform</p>
+                    <p>In-house platform unifying incident ticketing, SLA tracking, shift handover and tool-health monitoring for a running SOC. Agentic-AI assistance is next on the roadmap.</p>
+                    <div class="chips small"><span>Python</span><span>FastAPI</span><span>React</span><span>PostgreSQL</span><span>Docker</span></div>
+                </article>
+                <article class="project-card reveal">
+                    <div class="project-top"><span class="project-tag">CLIENT PoCs</span><i class="fas fa-robot project-icon"></i></div>
+                    <h3>Agentic SOC &amp; NOC</h3>
+                    <p class="project-sub">AI Agents for Detection, Triage &amp; Response</p>
+                    <p>Proof-of-concepts putting AI agents on real SOC and NOC workflows — for large Indian telecom operators, BFSI institutions and stock exchanges.</p>
+                    <div class="chips small"><span>Agentic AI</span><span>SOC</span><span>NOC</span><span>Detection</span></div>
+                </article>
+                <article class="project-card reveal">
+                    <div class="project-top"><span class="project-tag">LAW ENFORCEMENT</span><i class="fas fa-vault project-icon"></i></div>
+                    <h3>CASE VAULT</h3>
+                    <p class="project-sub">Criminal Record Management System</p>
+                    <p>Secure law-enforcement application with biometric inputs, blockchain-backed record integrity and automated charge-sheet summarisation.</p>
+                    <div class="chips small"><span>Blockchain</span><span>Biometrics</span><span>Python</span></div>
+                </article>
+                <article class="project-card reveal">
+                    <div class="project-img"><img src="img/siren.jpg" alt="FAER programme logo — SENTAI-G was selected for the FAER Scholarship"></div>
+                    <div class="project-top"><span class="project-tag">NLP · FAER</span><i class="fas fa-language project-icon"></i></div>
+                    <h3>SENTAI-G</h3>
+                    <p class="project-sub">Multilingual Sentiment Analysis</p>
+                    <p>Sentiment analysis built for Hinglish and regional Indian dialects — social-media mood, tracked with visual summaries. FAER Scholarship final-round selectee, 2023–24.</p>
+                    <div class="chips small"><span>Python</span><span>NLP</span><span>Hinglish</span></div>
+                </article>
+            </div>
+            <h3 class="early-head reveal">Early work</h3>
+            <div class="early-grid">
+                <article class="early-card reveal">
+                    <h4>Aakash Ganga <a href="https://gourav24401.github.io/AakashGanga2-0.github.io/" target="_blank" rel="noopener" aria-label="Visit Aakash Ganga"><i class="fas fa-arrow-up-right-from-square"></i></a></h4>
+                    <p>Space-tourism website — 1st place in an intra-college web design competition (Oct 2022). Where the design habit started.</p>
+                </article>
+                <article class="early-card reveal">
+                    <div class="early-img"><img src="img/print.jpg" alt="Printable photovoltaic solar cells"></div>
+                    <h4>Printable Solar Cells</h4>
+                    <p>Project on printable photovoltaic cells, selected for Smart India Hackathon 2021 &amp; 2022.</p>
+                </article>
+                <article class="early-card reveal">
+                    <div class="early-img"><img src="img/blog3.jpg" alt="Email Scraper — what is an email scraper?"></div>
+                    <h4>Email Scraper</h4>
+                    <p>Python tool that extracts email addresses from websites by user-defined criteria — contact gathering, automated.</p>
+                </article>
             </div>
         </section>
-        <section class="container" id="blogs">
-            <div class="blogs-content">
-                <div class="main-title">
-                    <h2>My <span>Projects</span><span class="bg-text">My Projects</span></h2>
-                </div>
-                <div class="blogs">
-                    <div class="blog">
-                        <img src="img/print.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Printable Solar cells
-                            </h4>
-                            <p>
-                                We are living in a world where mankind is utilizing its resources up to their extent, especially resources related to power generation. According to a survey by the end of the 21st century all fossil fuels are on the verge of extinction. Thus the only resource on which we can count is the sun and the photovoltaic cells are the key factors in utilizing these technologies.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/siren.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                            Sentai-G
-                            </h4>
-                            <p>
-                                Primary goal of ths project is to build and develop a sentiment analysis tool for
-assessing an organization's or individual's social media presence . this tool
-analyzes the mood expressed in social media postings made by by or about the
-entity within a certain time range . an analysis of this type may be extremely
-useful for analyzing public opinion ,following the performance of a marketing
-campaign ,or assessing the influence of certain events and it will be specific to
-analyze indian languages and indian slang </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/highway.png" alt="">
-                        <div class="blog-text">
-                            <h4>
-                           Aakash Ganga
-                            </h4>
-                            <p>
-                                "Aakash Ganga" is not just a website; it's a portal to the cosmos, dedicated to igniting the imagination and curiosity of space enthusiasts. Embark on a celestial journey with us as we explore the wonders of space tourism, offering virtual tours of distant galaxies, breathtaking views of celestial bodies, and insightful articles on the future of space exploration. Join our mission to inspire, educate, and excite visitors about the infinite possibilities of the universe. Welcome aboard Aakash Ganga, where the sky is not the limit—it's just the beginning  </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog3.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Email
-                            </h4>
-                            <p>
-                                My Python project, the Email Scraper, is a specialized tool designed to extract email addresses exclusively from websites. Using web scraping techniques, it meticulously navigates through web pages, extracting email addresses based on user-defined criteria.
-                                 Whether it's collecting contact information for potential clients, leads, or networking purposes, this project streamlines the process by automating the extraction of email addresses from web content. With customizable filters and parameters, users can target specific websites or web pages to gather relevant email contacts efficiently.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog2.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                ProjectX
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog2.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                 ProjectX
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
+        <!-- ======================= SPEAKING ======================= -->
+        <section class="section" id="speaking">
+            <div class="section-head reveal">
+                <p class="section-tag">// 05 — on stage</p>
+                <h2 class="section-title">Speaking &amp; <span>industry presence</span></h2>
+                <p class="section-sub">Key speaker for Cache Digitech. Event photos drop into the frames below as they come in.</p>
+            </div>
+            <div class="speaking-grid">
+                <article class="speak-card reveal">
+                    <!-- EVENT PHOTO SLOT: save the photo as img/events/ciso-horizon-2026.jpg, then replace this
+                         .photo-slot div with: <img src="img/events/ciso-horizon-2026.jpg" alt="Gourav speaking at CISO Horizon 2026"> -->
+                    <div class="photo-slot"><i class="fas fa-image"></i><p>Event photo — drop in</p><code>img/events/ciso-horizon-2026.jpg</code></div>
+                    <h3>CISO Horizon 2026</h3>
+                    <p class="speak-meta">Guwahati · 9–11 Oct 2026 · Invitation-only cybersecurity leadership summit</p>
+                    <p>Key speaker. Theme: “Cyber Resilience in the Age of AI”.</p>
+                </article>
+                <article class="speak-card reveal">
+                    <!-- EVENT PHOTO SLOT: save the photo as img/events/et-ciso.jpg, then replace this
+                         .photo-slot div with: <img src="img/events/et-ciso.jpg" alt="Gourav speaking at ET CISO"> -->
+                    <div class="photo-slot"><i class="fas fa-image"></i><p>Event photo — drop in</p><code>img/events/et-ciso.jpg</code></div>
+                    <h3>ET CISO</h3>
+                    <p class="speak-meta">Key speaker for Cache Digitech</p>
+                    <p>On stage for Cache Digitech at the ET CISO forum.</p>
+                </article>
+                <article class="speak-card reveal">
+                    <!-- EVENT PHOTO SLOT: save the photo as img/events/dell-tech-forum.jpg, then replace this
+                         .photo-slot div with: <img src="img/events/dell-tech-forum.jpg" alt="Gourav speaking at Dell Tech Forum"> -->
+                    <div class="photo-slot"><i class="fas fa-image"></i><p>Event photo — drop in</p><code>img/events/dell-tech-forum.jpg</code></div>
+                    <h3>Dell Tech Forum</h3>
+                    <p class="speak-meta">Key speaker for Cache Digitech</p>
+                    <p>Representing Cache Digitech on stage at the Dell Tech Forum.</p>
+                </article>
             </div>
         </section>
-        <section class="container contact" id="contact">
-            <div class="contact-container">
-                <div class="main-title">
-                    <h2> <span></span><span class="bg-text"></span></h2>
+
+        <!-- ======================= CERTIFICATIONS ======================= -->
+        <section class="section" id="certs">
+            <div class="section-head reveal">
+                <p class="section-tag">// 06 — credentials</p>
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-sub">Badge cards. Attach the certificate files and each card links straight to the document.</p>
+            </div>
+            <!-- CERTIFICATE SLOTS: drop each certificate image or PDF into img/certs/ with the filename shown
+                 on its card (e.g. img/certs/cnpen.pdf). Then wrap the card's .cert-slot in a link:
+                 <a href="img/certs/cnpen.pdf" target="_blank" rel="noopener">…slot…</a> -->
+            <div class="cert-grid">
+                <article class="cert-card reveal">
+                    <div class="cert-slot"><i class="fas fa-award"></i><p>Certificate file — drop in</p><code>img/certs/cnpen.pdf</code></div>
+                    <h3>CNPEN</h3>
+                    <p class="cert-issuer">Certified Network Pentester — The SecOps Group</p>
+                    <span class="cert-year">2026</span>
+                </article>
+                <article class="cert-card reveal">
+                    <div class="cert-slot"><i class="fas fa-award"></i><p>Certificate file — drop in</p><code>img/certs/api-rta.pdf</code></div>
+                    <h3>API-RTA</h3>
+                    <p class="cert-issuer">Certified API Red Team Analyst — CyberWarFare Labs</p>
+                    <span class="cert-year">2026</span>
+                </article>
+                <article class="cert-card reveal">
+                    <div class="cert-slot"><i class="fas fa-award"></i><p>Certificate file — drop in</p><code>img/certs/web-rta.pdf</code></div>
+                    <h3>WEB-RTA</h3>
+                    <p class="cert-issuer">Certified Web Red Team Analyst — CyberWarFare Labs</p>
+                    <span class="cert-year">2026</span>
+                </article>
+                <article class="cert-card reveal">
+                    <div class="cert-slot"><i class="fas fa-award"></i><p>Certificate file — drop in</p><code>img/certs/capen.pdf</code></div>
+                    <h3>CAPEN</h3>
+                    <p class="cert-issuer">The SecOps Group</p>
+                    <span class="cert-year">Earned</span>
+                </article>
+                <article class="cert-card reveal">
+                    <div class="cert-slot"><i class="fas fa-award"></i><p>Certificate file — drop in</p><code>img/certs/rhcsa.pdf</code></div>
+                    <h3>RHCSA</h3>
+                    <p class="cert-issuer">Red Hat Certified System Administrator — Red Hat</p>
+                    <span class="cert-year">Earned</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- ======================= ACHIEVEMENTS + GALLERY ======================= -->
+        <section class="section" id="proof">
+            <div class="section-head reveal">
+                <p class="section-tag">// 07 — receipts</p>
+                <h2 class="section-title">Achievements &amp; <span>field evidence</span></h2>
+            </div>
+            <ul class="achieve-list reveal">
+                <li><span class="ach-num">01</span><div><strong>Ranked 1st throughout B.Tech (Cyber Security)</strong> — MDU University, all semesters. 2nd-semester CGPA 9.57.</div></li>
+                <li><span class="ach-num">02</span><div><strong>FAER Scholarship</strong> — final-round selectee, 2023–24 (SENTAI-G).</div></li>
+                <li><span class="ach-num">03</span><div><strong>IDEATHON Haryana 2023</strong> — 2nd Runner-Up (₹11,000 prize).</div></li>
+                <li><span class="ach-num">04</span><div><strong>EDR bypass research</strong> — C2 payloads delivered via benign domains, demonstrated against SentinelOne &amp; CrowdStrike.</div></li>
+                <li><span class="ach-num">05</span><div><strong>1st prize, technical poster presentation</strong> — Perovskite solar cells (May 2022).</div></li>
+                <li><span class="ach-num">06</span><div><strong>1st place, intra-college website design</strong> — Aakash Ganga, space tourism (Oct 2022).</div></li>
+                <li><span class="ach-num">07</span><div><strong>Smart India Hackathon</strong> — printable solar cells project selected (2021 &amp; 2022).</div></li>
+                <li><span class="ach-num">08</span><div><strong>MDU University Merit List</strong> — CSE (IoT), May 2023.</div></li>
+            </ul>
+            <div class="gallery">
+                <figure class="reveal"><img src="img/port1.jpg" alt="Gourav receiving an award at Dronacharya College of Engineering" loading="lazy"><figcaption>Award ceremony — Dronacharya College of Engineering</figcaption></figure>
+                <figure class="reveal"><img src="img/port2.jpg" alt="Dronacharya College of Engineering congratulations poster — 1st year students above 9 SGPA, Gourav Dhankhar 9.57" loading="lazy"><figcaption>1st-year university exam — above 9 SGPA (9.57)</figcaption></figure>
+                <figure class="reveal"><img src="img/port4.jpg" alt="IMPACT Website Building Competition winners poster — Gourav Dhankhar 1st place" loading="lazy"><figcaption>IMPACT Website Building Competition — 1st place, World Entrepreneurship Day</figcaption></figure>
+                <figure class="reveal"><img src="img/port5.jpg" alt="First prize cheque — Perovskite solar cells poster, 28 May 2022" loading="lazy"><figcaption>Perovskite solar cells poster — 1st Prize, 28 May 2022</figcaption></figure>
+                <figure class="reveal"><img src="img/port6.jpg" alt="University Merit List May 2023 — CSE (IoT), Maharishi Dayanand University Rohtak" loading="lazy"><figcaption>University Merit List — CSE (IoT), MDU Rohtak, May 2023</figcaption></figure>
+                <figure class="reveal"><img src="img/port3.jpg" alt="Group photo with classmates at Dronacharya College of Engineering" loading="lazy"><figcaption>With the cohort — Dronacharya College of Engineering</figcaption></figure>
+            </div>
+        </section>
+
+        <!-- ======================= CONTACT ======================= -->
+        <section class="section" id="contact">
+            <div class="section-head reveal">
+                <p class="section-tag">// 08 — open channel</p>
+                <h2 class="section-title">Contact</h2>
+                <p class="section-sub">Available for security work, speaking, and collaboration. The form opens your email client — no data leaves your machine.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-cards reveal">
+                    <a class="contact-card" href="mailto:gouravdhankhar2003@gmail.com"><i class="fas fa-envelope"></i><div><span>Email</span><strong>gouravdhankhar2003@gmail.com</strong></div></a>
+                    <a class="contact-card" href="tel:+919812928036"><i class="fas fa-phone"></i><div><span>Phone</span><strong>+91 98129 28036</strong></div></a>
+                    <a class="contact-card" href="https://www.linkedin.com/in/gourav-dhankhar-280629188" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i><div><span>LinkedIn</span><strong>in/gourav-dhankhar-280629188</strong></div></a>
+                    <a class="contact-card" href="https://github.com/gourav24401" target="_blank" rel="noopener"><i class="fab fa-github"></i><div><span>GitHub</span><strong>gourav24401</strong></div></a>
+                    <a class="contact-card" href="https://www.instagram.com/gourav_dhankhar_2003" target="_blank" rel="noopener"><i class="fab fa-instagram"></i><div><span>Instagram</span><strong>gourav_dhankhar_2003</strong></div></a>
+                    <a class="contact-card" href="https://x.com/GOURAV_DH" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i><div><span>X</span><strong>@GOURAV_DH</strong></div></a>
+                    <a class="contact-card" href="https://www.youtube.com/channel/UCgWkUHm2D9yOn7dqYJ-pc6A/featured" target="_blank" rel="noopener"><i class="fab fa-youtube"></i><div><span>YouTube</span><strong>Gourav Dhankhar</strong></div></a>
+                    <div class="contact-card static"><i class="fas fa-map-marker-alt"></i><div><span>Location</span><strong>Rohtak, Haryana, India</strong></div></div>
                 </div>
-                <div class="contact-content-con">
-                    <div class="left-contact">
-                        <h4>Contact me here</h4>
-                        <p>
-                            I'm available to be reached for either personal or project-related calls.
-                        </p>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Location</span>
-                                </div>
-                                <p>
-                                    : Rohtak,Haryana,India
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>Email</span>
-                                </div>
-                                <p>
-                                    <span>: gouravdhankhar2003@gmail.com</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Education</span>
-                                </div>
-                                <p>
-                                    <span>: DCE,Gurugram</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Mobile Number</span>
-                                </div>
-                                <p>
-                                    <span>: 9812928036</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-globe-africa"></i>
-                                    <span>Languages</span>
-                                </div>
-                                <p>
-                                    <span>: Hindi,English</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="contact-icons">
-                            <div class="contact-icon">
-                                <a href="https://www.instagram.com/gourav_dhankhar_2003?igsh=ejR2MzBwNjQzbnEz" target="_blank">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="https://x.com/GOURAV_DH?t=QJUhc4GZNlc7_lEv3qrO5Q&s=09" target="_blank">
-                                    <i class="fab fa-x-twitter"></i>
-                                </a>
-                                <a href="https://github.com/gourav24401" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://www.youtube.com/channel/UCgWkUHm2D9yOn7dqYJ-pc6A/featured" target="_blank">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="form-row">
+                        <input type="text" id="cfName" required placeholder="YOUR NAME" autocomplete="name">
+                        <input type="email" id="cfEmail" required placeholder="YOUR EMAIL" autocomplete="email">
                     </div>
-                    <div class="right-contact">
-                        <form action="" class="contact-form">
-                            <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
-                            </div>
-                            <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
-                            </div>
-                            <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
-                            </div>
-                            <div class="submit-btn">
-                                <a href="https://drive.google.com/file/d/1pBoV_Ojz7bwf9yWfDCZOJK8drwY5RLzh/view?usp=drive_link" class="main-btn">
-                                    <span class="btn-text">Download CV</span>
-                                    <span class="btn-icon"><i class="fas fa-download"></i></span>
-                                </a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+                    <input type="text" id="cfSubject" required placeholder="SUBJECT">
+                    <textarea id="cfMsg" rows="6" required placeholder="Message here..."></textarea>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send via email</button>
+                    <a href="assets/Gourav_Dhankhar_Resume.pdf" class="btn btn-ghost" download><i class="fas fa-download"></i> Download CV</a>
+                </form>
             </div>
         </section>
     </main>
 
-    <div class="controls">
-        <div class="control active-btn" data-id="home" >
-            <i class="fas fa-home"></i>
-        </div>
-        <div class="control" data-id="about">
-            <i class="fas fa-user"></i>
-        </div>
-        <div class="control" data-id="portfolio">
-            <i class="fas fa-briefcase"></i>
-        </div>
-        <div class="control" data-id="blogs">
-            <i class="far fa-newspaper"></i>
-        </div>
-        <div class="control" data-id="contact">
-            <i class="fas fa-envelope-open"></i>
-        </div>
-    </div>
-    <div class="theme-btn">
-        <i class="fas fa-adjust"></i>
-    </div>
+    <footer class="footer">
+        <p><span class="brand-prompt">gourav@bastion</span><span class="brand-sep">:</span><span class="brand-path">~$</span> <span class="footer-dim">exit 0 — thanks for stopping by the den.</span></p>
+        <p class="footer-dim">© 2026 Gourav Dhankhar · Rohtak, Haryana, India · Bastion theme</p>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 </html>
