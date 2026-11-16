@@ -393,38 +393,38 @@
             <div class="section-head reveal">
                 <p class="section-tag">// 07 — credentials</p>
                 <h2 class="section-title">Certifications</h2>
-                <p class="section-sub">Badge cards. Attach the certificate files and each card links straight to the document.</p>
+                <p class="section-sub">Click any certificate to open the full document.</p>
             </div>
-            <!-- CERTIFICATE SLOTS: drop each certificate image or PDF into img/certs/ with the filename shown
-                 on its card (e.g. img/certs/cnpen.pdf). Then wrap the card's .cert-slot in a link:
-                 <a href="img/certs/cnpen.pdf" target="_blank" rel="noopener">…slot…</a> -->
+            <!-- CERTIFICATES: PDFs live in img/certs/, first-page thumbnails in img/certs/thumbs/.
+                 To swap a certificate, replace its PDF and regenerate the thumbnail:
+                 pdftoppm -jpeg -r 72 -f 1 -l 1 img/certs/<name>.pdf img/certs/thumbs/<name> -->
             <div class="cert-grid">
                 <article class="cert-card reveal">
-                    <div class="cert-slot"><i class="fas fa-award"></i><p>Certificate file — drop in</p><code>img/certs/cnpen.pdf</code></div>
+                    <a class="cert-thumb" href="img/certs/cnpen.pdf" target="_blank" rel="noopener"><img src="img/certs/thumbs/cnpen.jpg" alt="CNPEN certificate — Certified Network Pentester"><span class="cert-view">View certificate <i class="fas fa-external-link-alt"></i></span></a>
                     <h3>CNPEN</h3>
                     <p class="cert-issuer">Certified Network Pentester — The SecOps Group</p>
                     <span class="cert-year">2026</span>
                 </article>
                 <article class="cert-card reveal">
-                    <div class="cert-slot"><i class="fas fa-award"></i><p>Certificate file — drop in</p><code>img/certs/api-rta.pdf</code></div>
+                    <a class="cert-thumb" href="img/certs/api-rta.pdf" target="_blank" rel="noopener"><img src="img/certs/thumbs/api-rta.jpg" alt="API-RTA certificate — Certified API Red Team Analyst"><span class="cert-view">View certificate <i class="fas fa-external-link-alt"></i></span></a>
                     <h3>API-RTA</h3>
                     <p class="cert-issuer">Certified API Red Team Analyst — CyberWarFare Labs</p>
                     <span class="cert-year">2026</span>
                 </article>
                 <article class="cert-card reveal">
-                    <div class="cert-slot"><i class="fas fa-award"></i><p>Certificate file — drop in</p><code>img/certs/web-rta.pdf</code></div>
+                    <a class="cert-thumb" href="img/certs/web-rta.pdf" target="_blank" rel="noopener"><img src="img/certs/thumbs/web-rta.jpg" alt="WEB-RTA certificate — Certified Web Red Team Analyst"><span class="cert-view">View certificate <i class="fas fa-external-link-alt"></i></span></a>
                     <h3>WEB-RTA</h3>
                     <p class="cert-issuer">Certified Web Red Team Analyst — CyberWarFare Labs</p>
                     <span class="cert-year">2026</span>
                 </article>
                 <article class="cert-card reveal">
-                    <div class="cert-slot"><i class="fas fa-award"></i><p>Certificate file — drop in</p><code>img/certs/capen.pdf</code></div>
+                    <a class="cert-thumb" href="img/certs/capen.pdf" target="_blank" rel="noopener"><img src="img/certs/thumbs/capen.jpg" alt="CAPEN certificate — Certified AppSec Pentester"><span class="cert-view">View certificate <i class="fas fa-external-link-alt"></i></span></a>
                     <h3>CAPEN</h3>
                     <p class="cert-issuer">The SecOps Group</p>
                     <span class="cert-year">Earned</span>
                 </article>
                 <article class="cert-card reveal">
-                    <div class="cert-slot"><i class="fas fa-award"></i><p>Certificate file — drop in</p><code>img/certs/rhcsa.pdf</code></div>
+                    <a class="cert-thumb" href="img/certs/rhcsa.pdf" target="_blank" rel="noopener"><img src="img/certs/thumbs/rhcsa.jpg" alt="RHCSA certificate — Red Hat Certified System Administrator"><span class="cert-view">View certificate <i class="fas fa-external-link-alt"></i></span></a>
                     <h3>RHCSA</h3>
                     <p class="cert-issuer">Red Hat Certified System Administrator — Red Hat</p>
                     <p class="cert-score">EX200 — 285/300</p>
