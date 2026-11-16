@@ -5,7 +5,7 @@ Single-page vanilla HTML/CSS/JS — no build step, no framework.
 
 ## Structure
 
-- `index.html` — the whole site (hero, about, arsenal, experience, projects, speaking, certs, achievements, contact)
+- `index.html` — the whole site (hero, about, arsenal, experience, ai research, projects, oem stack, speaking, certs, achievements, contact)
 - `styles/styles.css` — Bastion theme (dark-first, Cold Steel `#8FC1D4`; light accent `#2E7FA3`)
 - `app.js` — theme toggle, mobile nav, terminal typing, reveal-on-scroll, mailto contact form
 - `assets/Gourav_Dhankhar_Resume.pdf` — CV download (the committed Visual resume)

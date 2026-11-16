@@ -37,6 +37,7 @@
     var commands = [
         'nmap -sV --top-ports 1000 target',
         'curl -s https://api.cache.local/health | jq',
+        'airrived agents --status all',
         'tail -f /var/log/soc/alerts.log',
         'python3 garuda1.py --triage --auto'
     ];
