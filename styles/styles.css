@@ -417,7 +417,18 @@ body.light-mode .terminal { background: #101820; }
     display: flex; flex-direction: column;
 }
 .cert-card:hover { border-color: var(--accent-dim); transform: translateY(-2px); }
-.cert-slot { margin-bottom: 14px; padding: 20px 10px; }
+.cert-thumb {
+    display: block; margin-bottom: 14px; border: 1px solid var(--border);
+    border-radius: 8px; overflow: hidden; transition: border-color 0.2s;
+}
+.cert-thumb:hover { border-color: var(--accent); }
+.cert-thumb img { width: 100%; display: block; aspect-ratio: 842 / 595; object-fit: cover; }
+.cert-view {
+    display: block; font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--accent); background: var(--bg-2);
+    padding: 9px 10px; border-top: 1px solid var(--border);
+}
+.cert-view i { font-size: 9px; margin-left: 4px; }
 .cert-card h3 { font-family: var(--font-mono); font-size: 19px; color: var(--text-strong); letter-spacing: 0.5px; }
 .cert-issuer { font-size: 12.5px; color: var(--muted); margin: 6px 0 12px; flex-grow: 1; }
 .cert-score { font-family: var(--font-mono); font-size: 12px; color: var(--accent); font-weight: 700; margin-bottom: 12px; }
